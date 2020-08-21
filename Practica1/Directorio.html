@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="name" charset="UTF-8" http-equiv="Content-Type" content="tex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio</title>
+</head>
+<body>
+    <h1>Ingrese su Informacion</h1>
+    <form name="Directorio" action="#" method="POST" accept-charset="utf-8">
+        
+        <label>Numero Empleado: </label>
+        <input type="text" id="i_nEmpleado" name="i_nEmpleado" placeholder="Numero Empleado">
+        
+        <br><br>
+        <label>Nombre Completo:</label>
+        <input type="text" id="i_FName" name="i_FName" placeholder="Nombre Completo">
+        
+        <br><br>
+        <label>Departamento:</label>
+        <select name="combo">
+            <!-- Opciones de la lista -->
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option> 
+            <option value="3">Opción 3</option>
+          </select>
+
+        <br><br>
+        <label>Extensión Telefonica (5 digitos):</label>
+        <input type="text" id="i_ext" name="i_ext" placeholder="Extension Telefonica">
+
+        <br><br>
+        <Label>Tipo de Linea: </Label>
+        <label>Analogica</label><input type="radio" name="i_lineaTel" id="i_lineaTel">
+        <label>Digital</label><input type="radio" name="i_lineaTel" id="i_lineaTel">
+        <label>Celular</label><input type="radio" name="i_lineaTel" id="i_lineaTel">
+
+        <br><br>
+        <label>Funciones Principales del Departamento</label>
+        <br>
+        <textarea name="Funciones Principales del Departamento" rows="10" cols="40" minlength="10" maxlength="100" placeholder="Escribe aqui tus funciones"></textarea>
+        
+        <br><br>
+        <input type="submit" name="bttn_registra" value="Registrar">
+        &nbsp;&nbsp;&nbsp; <!--Espacio entre botones-->
+        <input type="reset" name=bttn_resetRegistra" value="Limpiar Forma">
+    </form>
+    
+</body>
+</html>

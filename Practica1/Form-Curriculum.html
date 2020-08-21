@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="name" charset="UTF-8" http-equiv="Content-Type" content="tex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+</head>
+<body>
+    <h1>Ingrese su Informacion</h1>
+    <form name="Curriculum" action="#" method="post" accept-charset="utf-8">
+        <label>Nombre:</label>
+        <input type="text" id="i_nombre" name="i_nombre" placeholder="Nombre">
+        
+        <br><br>
+        <label>Apellido:</label>
+        <input type="text" id="i_apellido" name="i_apellido" placeholder="Apellido">
+
+        <br><br>
+        <label>Contraseña:</label>
+        <input type="password" id="i_passwd" name="i_passwd" placeholder="Contraseña">
+
+        <br><br>
+        <label>R.F.C.:</label>
+        <input type="text" id="i_rfc" name="i_rfc" placeholder="R.F.C." maxlength="13" required="true">
+
+        <br><br>
+        <label>Email:</label>
+        <input type="email" id="i_email" name="i_email" placeholder="Email">
+
+        <br><br>
+        <label>Fecha y Hora: </label>
+        <input type="month" id="i_datatime" name="i_datatime">
+
+        <br><br>
+        <label>Genero:</label>
+        <label>Femenino</label><input type="radio" id="i_genero" name="i_genero">
+        <label>Masculino</label><input type="radio" id="i_genero" name="i_genero">
+
+        <br><br>
+        <label>Foto: </label>
+        <input type="file" id="i_foto" name="i_foto">
+        
+        <br><br>
+        <label>Deseo Suscribirme al boletin de novedades: </label>
+        <input type="checkbox" name="i_sub" id="i_sub">
+
+        <br><br>
+        <select name="s_departamentos" id="s_departamentos">
+            <!-- Opciones de la lista -->
+            <option value="1">Recursos Humanos</option>
+            <option value="2">Informatica</option> 
+            <option value="3">Estadistica</option>
+          </select>
+
+        <br><br>
+        <input type="submit" name="bttn_registra" value="Registrar">
+        &nbsp;&nbsp;&nbsp; <!--Espacio entre botones-->
+        <input type="reset" name=bttn_resetRegistra" value="Limpiar Forma">
+        
+    </form>
+
+    <table border="1">
+        <caption>Listado de Participantes</caption>
+        <thead>
+            <tr> <!--Renglon-->
+                <th>R.F.C</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PETD435345345</td>
+                <td>Luz Deorela Sabas</td>
+                <td>Alvarado Lara</td>
+                <td>#454 Zona Centro</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
