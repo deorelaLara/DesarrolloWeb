@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 01</title>
+
+</head>
+
+<body>
+    <h1 align="Center">Information</h1>
+    <form name="Tarea01" id="id_form" action="#" method="post" accept-charset="utf-8">
+        <label>Name: </label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="i_name" name="i_name" placeholder="Name">
+
+        <br><br>
+        <label>Email: </label>&nbsp;&nbsp;&nbsp;
+        <input type="email" id="i_email" name="i_email" placeholder="Email">
+
+        <br><br>
+        <label>Product: </label>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="i_prod" name="i_prod"><label>Adobe ColdFusion Builder</label>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="i_prod" name="i_prod"><label>Adobe Flash Builder</label>
+
+        <br><br>
+        <input type="checkbox" id="i_notif" name="i_notif"><label>Please notify me of product updates by email</label>
+
+        <br><br>
+        <label>Enquiry:</label>
+        &nbsp;&nbsp;&nbsp;<select name="s_enquiry" id="s_enquiry">
+            <!-- Opciones de la lista -->
+            <option value="1">Sales</option>
+            <option value="2">Economy</option> 
+            <option value="3">Technology</option>
+          </select>
+          
+          <br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <textarea name="Enquiry" rows="5" cols="40" minlength="10" maxlength="100" placeholder="Tell us about your enquiry"></textarea>
+
+          <br><br>
+          <input type="submit" id="btn_save" name="btn_save" value="Save" background="Orange">
+
+    </form>
+</body>
+</html>
+
+<!-- PARA AGREGAR DISEÑO QUITAR &nbsp; Y CAMBIA EL DISEÑO
+    <style type="text/css">
+    *{box-sizing: border-box;}
+    form{
+        width: 501px;
+        padding: 40px;
+        margin:auto;
+    }
+    textarea{
+	    width:100%;
+	    height:100px;
+	    border:1px solid #b6afaf;
+	    border-radius:3px;
+	    background-color:#f6f6f6;			
+	    margin:8px 0;
+	    /*resize: vertical | horizontal | none | both*/
+	    resize:none;
+	    display:block;
+    }
+    #btn_save{
+        width: 75px;
+        height: 30px;
+        font-size: 14px;
+        background-color: rgb(223, 216, 158);   
+        }
+    </style>
+-->
