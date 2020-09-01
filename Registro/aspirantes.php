@@ -11,7 +11,7 @@
     <p>Completar los datos requeridos, esta pantalla esta adaptada para operar en dispositivos móviles</p>
 
     <div class="container" id="hola">
-        <form action="#" method="post" accept-charset="utf-8">
+        <form action="#" method="post" accept-charset="utf-8" onsubmit=" return valida_forma();">
            
             <div class="row" id="rfc">
                 <div class="col-25">
@@ -97,5 +97,6 @@
             </div>
         </form>
     </div>    <!--Div Container-->
+    <script src="js/my_functions.js" type="text/javascript"></script>
 </body>
 </html>
