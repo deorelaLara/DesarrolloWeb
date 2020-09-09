@@ -8,6 +8,8 @@ function valida_forma(){
     var var_telefono = document.getElementById("itel").value;
     var var_email = document.getElementById("iemail").value;
     var var_curso = document.getElementById("scurso").value;
+    var var_status = document.getElementById("status").value;
+
 
     //alert(var_rfc);
     
@@ -43,5 +45,20 @@ function valida_forma(){
         alert("Error: el campo Curso es obligatorio, verificar ");
         return false;
     }
-    
 }
+
+function validaRFC(){
+    //alert("hola");
+    pattern = /^[a-zA-Z]{4}(\d{6})(([a-zA-Z0-9]){3})?$/;
+    rfc = document.getElementById("irfc").value;
+    document.getElementById("status").innerHTML = pattern.test(rfc);
+    return pattern.test(rfc);
+ }
+
+ function validaRFC2(){
+    //alert("hola");
+    pattern = /^[a-zA-Z]{4}(\d{6})(([a-zA-Z0-9]){3})?$/;
+    rfc = document.getElementById("irfc").value;
+    document.getElementById("estatus").innerHTML = (pattern.test(rfc)) ? "Formato OK" : "Hay errores de formato";
+    return pattern.test(rfc);
+ }

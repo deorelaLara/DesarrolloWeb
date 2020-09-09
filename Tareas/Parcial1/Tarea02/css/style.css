@@ -3,10 +3,20 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box
     }
+    .header{
+        background-color: rgb(142, 196, 60);
+        color: #ffffff;
+        padding: 1px;
+        text-align: center;
+    }
+    html{
+        font-family: "Lucida Sans", sans-serif;
+        font-size: small;
+    }
 
     form{
-        width: 500px;
-        padding: 10px;
+        width: 400px;
+        padding: 5px;
         margin:auto;
     }
     textarea{
@@ -31,7 +41,7 @@
         width: 75px;
         height: 30px;
         font-size: 14px;
-        background-color: rgb(99, 248, 53);   
+        background-color:rgb(142, 196, 60);   
     }
     label {
         padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
@@ -39,9 +49,6 @@
     } 
     
     @media screen and (min-width: 600px){
-        body{
-            background-color:rgb(231, 171, 58);
-        }
         label {
             padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
             display: inline-block;/*crear una cuadrícula de cajas que llene el navegador armoniosamente*/

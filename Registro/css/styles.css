@@ -84,6 +84,9 @@ input[type=submit]{
     display: table;
     clear: both;
 }
+.mayusculas{
+    text-transform: uppercase;
+}
 
 @media screen and (max-width: 600px){
     

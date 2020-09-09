@@ -16,9 +16,10 @@
             <div class="row" id="rfc">
                 <div class="col-25">
                     <label for="lrfc">R.F.C</label>
+                    <label id="status"></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="irfc" id="irfc" maxlength="13" size="20" placeholder="R.F.C">
+                    <input type="text" class="mayusculas" name="irfc" id="irfc" maxlength="13" size="20" placeholder="R.F.C" onkeyup="validaRFC();">
                 </div>
             </div>
 
@@ -27,7 +28,7 @@
                     <label for="lnom">Nombre</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="inombre" id="inombre" maxlength="30" size="40" placeholder="Nombre">
+                    <input type="text" class="mayusculas" ame="inombre" id="inombre" maxlength="30" size="40" placeholder="Nombre">
                 </div>
             </div>
 
@@ -36,7 +37,7 @@
                     <label for="lapellidoPat">Apellido Paterno</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="iapellidoPat" id="iapellidoPat" maxlength="30" size="20" placeholder="Apellido Materno">
+                    <input type="text" class="mayusculas" name="iapellidoPat" id="iapellidoPat" maxlength="30" size="20" placeholder="Apellido Materno">
                 </div>
             </div>
             
@@ -45,7 +46,7 @@
                     <label for="lapellidoMat">Apellido Materno</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="iapellidoMat" id="iapellidoMat" maxlength="30" size="20" placeholder="Apellido Paterno">
+                    <input type="text" class="mayusculas" name="iapellidoMat" id="iapellidoMat" maxlength="30" size="20" placeholder="Apellido Paterno">
                 </div>    
             </div>
             
@@ -54,7 +55,7 @@
                     <label for="lemp">Empresa</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="iempresa" id="iempresa" maxlength="30" size="40" placeholder="Nombre Empresa">
+                    <input type="text" class="mayusculas" name="iempresa" id="iempresa" maxlength="30" size="40" placeholder="Nombre Empresa">
                 </div>    
             </div>
 
@@ -72,7 +73,7 @@
                     <label for="lemail">Email</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="iemail" id="iemail" maxlength="60" size="80" placeholder="Email">
+                    <input type="email" name="iemail" id="iemail" maxlength="60" size="80" placeholder="Email">
                 </div>
             </div>
             <div class="row">
