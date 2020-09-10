@@ -13,14 +13,14 @@
     <div class="header">
         <h1>Information</h1>
     </div>
-    
-    <form name="Tarea01" id="id_form" action="#" method="post" accept-charset="utf-8" onsubmit="return valida_form();">
+
+    <form name="id_form" id="id_form" action="#" method="post" accept-charset="utf-8" onsubmit="return valida_form();">
         <label>Name: </label>
-        <input type="text" id="i_name" name="i_name" placeholder="Name">
+        <input type="text" id="i_name" name="i_name" placeholder="Name" required="true">
 
         <br><br>
         <label>Email: </label>
-        <input type="email" id="i_email" name="i_email" placeholder="Email">
+        <input type="email" id="i_email" name="i_email" placeholder="Email" required="true">
 
         <br><br>
         <label>Product: </label>
@@ -41,11 +41,10 @@
           </select>
           
           <br><br>
-          <textarea name="t_Enquiry" id="t_Enquiry" rows="5" cols="40" minlength="10" maxlength="100" placeholder="Tell us about your enquiry"></textarea>
+          <textarea name="t_Enquiry" id="t_Enquiry" rows="5" cols="40" minlength="10" maxlength="100" placeholder="Tell us about your enquiry" required="true"></textarea>
 
           <br><br>
           <input type="submit" id="btn_save" name="btn_save" value="Save" background="Orange">
-
     </form>
     <script src="js/functions.js" type="text/javascript"></script>
 </body>

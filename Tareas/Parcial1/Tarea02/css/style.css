@@ -4,7 +4,7 @@
         box-sizing: border-box
     }
     .header{
-        background-color: rgb(142, 196, 60);
+        background-color: rgb(196, 121, 60);
         color: #ffffff;
         padding: 1px;
         text-align: center;
@@ -41,7 +41,8 @@
         width: 75px;
         height: 30px;
         font-size: 14px;
-        background-color:rgb(142, 196, 60);   
+        background-color:rgb(196, 99, 60);   
+        color: #ffffff;
     }
  
     @media screen and (min-width: 600px){
