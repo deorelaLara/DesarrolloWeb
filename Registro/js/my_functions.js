@@ -10,17 +10,16 @@ function valida_forma(){
     var var_telefono = document.getElementById("itel").value;
     var var_email = document.getElementById("iemail").value;
     var var_curso = document.getElementById("scurso").value;
-    var var_status = document.getElementById("status").value;
-
-
+    var var_status = document.getElementById("status").textContent;
+    //alert(var_status);
     //alert(var_rfc);
     
     if(var_rfc.length==0){
-        alert("Error: el campo RFC es obligatorio, verificar ");
+        alert("Error: el campo RFC es obligatorio, verificar. ");
         return false;
     }
     else if(!pattern.test(rfc)){
-        alert("Error: El RFC esta mal formado, verificar");
+        alert("Error: El RFC esta mal formado, verificar.");
         return false;
     }
     else if(var_nombre.length==0){
@@ -65,6 +64,6 @@ function validaRFC(){
     //alert("hola");
     pattern = /^[a-zA-Z]{4}(\d{6})(([a-zA-Z0-9]){3})?$/;
     rfc = document.getElementById("irfc").value;
-    document.getElementById("estatus").innerHTML = (pattern.test(rfc)) ? "Formato OK" : "Hay errores de formato";
+    document.getElementById("status").innerHTML = (pattern.test(rfc)) ? "Formato OK" : "Hay errores de formato";
     return pattern.test(rfc);
  }

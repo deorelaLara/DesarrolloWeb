@@ -15,12 +15,18 @@
     </div>
 
     <form name="id_form" id="id_form" action="#" method="post" accept-charset="utf-8" onsubmit="return valida_form();">
-        <label>Name: </label>
-        <input type="text" id="i_name" name="i_name" placeholder="Name" required="true">
+        <div name="inf" id="inf" class="col-25">
+            <div class="col-75">
+                <label>Name: </label>
+            </div>
+            <input type="text" id="i_name" name="i_name" placeholder="Name" required="true">
 
-        <br><br>
-        <label>Email: </label>
-        <input type="email" id="i_email" name="i_email" placeholder="Email" required="true">
+            <br><br>
+            <div id="col-75">
+                <label>Email: </label>
+            </div>
+            <input type="email" id="i_email" name="i_email" placeholder="Email" required="true">
+        </div>
 
         <br><br>
         <label>Product: </label>

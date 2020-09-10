@@ -7,8 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css"
 </head>
 <body>
-    <h2>Ingrese sus datos para el pre-registro a los cursos</h2>
-    <p>Completar los datos requeridos, esta pantalla esta adaptada para operar en dispositivos móviles</p>
+    <header id="hdr">
+        <h2>Ingrese sus datos para el pre-registro a los cursos</h2>
+        <p>Completar los datos requeridos, esta pantalla esta adaptada para operar en dispositivos móviles</p>
+    </header>
+    
 
     <div class="container" id="hola">
         <form action="#" method="post" accept-charset="utf-8" onsubmit=" return valida_forma();">
@@ -19,7 +22,7 @@
                     <label id="status"></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" class="mayusculas" name="irfc" id="irfc" maxlength="13" size="20" placeholder="R.F.C" onkeyup="validaRFC();">
+                    <input type="text" class="mayusculas" name="irfc" id="irfc" maxlength="13" size="20" placeholder="R.F.C" onkeyup="validaRFC2();">
                 </div>
             </div>
 
