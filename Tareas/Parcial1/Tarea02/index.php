@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Tarea 01</title>
+    <title>Enquiry</title>
 
 </head>
 
@@ -13,6 +13,7 @@
     <div class="header">
         <h1>Information</h1>
     </div>
+    
     <form name="Tarea01" id="id_form" action="#" method="post" accept-charset="utf-8" onsubmit="return valida_form();">
         <label>Name: </label>
         <input type="text" id="i_name" name="i_name" placeholder="Name">
@@ -33,13 +34,14 @@
         <label>Enquiry:</label>
         <select name="s_enquiry" id="s_enquiry">
             <!-- Opciones de la lista -->
+            <option value="0">Select Option</option>
             <option value="1">Sales</option>
             <option value="2">Economy</option> 
             <option value="3">Technology</option>
           </select>
           
           <br><br>
-          <textarea name="Enquiry" rows="5" cols="40" minlength="10" maxlength="100" placeholder="Tell us about your enquiry"></textarea>
+          <textarea name="t_Enquiry" id="t_Enquiry" rows="5" cols="40" minlength="10" maxlength="100" placeholder="Tell us about your enquiry"></textarea>
 
           <br><br>
           <input type="submit" id="btn_save" name="btn_save" value="Save" background="Orange">

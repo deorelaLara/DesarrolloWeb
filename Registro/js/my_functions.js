@@ -1,3 +1,5 @@
+var pattern = /^[a-zA-Z]{4}(\d{6})(([a-z0-9]){3})?$/;
+
 function valida_forma(){
     //EL ELEMENTO QUE SE TRAE ES EL ID QUE SE PONE EN LA ETIQUETA HTML
     var var_rfc = document.getElementById("irfc").value;
@@ -15,6 +17,10 @@ function valida_forma(){
     
     if(var_rfc.length==0){
         alert("Error: el campo RFC es obligatorio, verificar ");
+        return false;
+    }
+    else if(!pattern.test(rfc)){
+        alert("Error: El RFC esta mal formado, verificar");
         return false;
     }
     else if(var_nombre.length==0){
