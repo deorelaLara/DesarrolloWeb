@@ -3,12 +3,21 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box
 }
+@font-face {
+  font-family: 'Metal Mania';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Metal Mania'), local('MetalMania-Regular'), url(http://themes.googleusercontent.com/static/fonts/metalmania/v2/_MPduYXiaptg6GQ2M6AHtJ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
 #hdr{
-    background: greenyellow;
+    background: rgb(255, 47, 109);
     padding: 1px;
+    color: #FFFFFF;
+    border-radius: 5px;
 }
 p{
     text-align: center;
+    font-family:'Metal Mania';
 }
 body{
    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(36,76,117,1) 100%); */
@@ -45,7 +54,7 @@ input[type=submit]{
     border-radius: 5px;
     /*background:linear-gradient(0deg, rgba(34,193,195,0.8) 20%, rgba(255,171,13,0.8) 78%); */
     /*background: radial-gradient(circle, rgba(238,174,202,0.5) 0%, rgba(111,153,197,0.5) 100%);     */
-    background: orange;
+    background: rgb(0, 255, 200);
     padding: 20px;
 }
 
@@ -94,6 +103,16 @@ input[type=submit]{
 }
 .mayusculas{
     text-transform: uppercase;
+}
+/* ligado con el required*/
+select, input:optional{
+    border-color: gray;
+}
+select, input:valid{
+    border-color: green;
+}
+select, input:invalid{
+    border-color: red
 }
 
 @media screen and (max-width: 600px){

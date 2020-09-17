@@ -19,37 +19,40 @@
             <div class="row" id="rfc">
                 <div class="col-25">
                     <label for="lrfc">R.F.C</label>
-                    <label id="status"></label>
+                    <label id="status_rfc" ></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" class="mayusculas" name="irfc" id="irfc" maxlength="13" size="20" placeholder="R.F.C" onkeyup="validaRFC2();">
+                    <input type="text" class="mayusculas" name="irfc" id="irfc" maxlength="13" size="20" placeholder="R.F.C" onkeyup="validaRFC2();" required>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-25">
                     <label for="lnom">Nombre</label>
+                    <label id="status_name"></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" class="mayusculas" ame="inombre" id="inombre" maxlength="30" size="40" placeholder="Nombre">
+                    <input type="text" class="mayusculas" ame="inombre" id="inombre" maxlength="30" size="40" placeholder="Nombre" onkeyup="validaFullName();" required>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-25">
                     <label for="lapellidoPat">Apellido Paterno</label>
+                    <label id="status_apellidoPat"></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" class="mayusculas" name="iapellidoPat" id="iapellidoPat" maxlength="30" size="20" placeholder="Apellido Materno">
+                    <input type="text" class="mayusculas" name="iapellidoPat" id="iapellidoPat" maxlength="30" size="20" placeholder="Apellido Paterno" onkeyup="validaFullName();" required>
                 </div>
             </div>
             
             <div class="row">
                 <div class="col-25">
                     <label for="lapellidoMat">Apellido Materno</label>
+                    <label id="status_apellidoMat"></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" class="mayusculas" name="iapellidoMat" id="iapellidoMat" maxlength="30" size="20" placeholder="Apellido Paterno">
+                    <input type="text" class="mayusculas" name="iapellidoMat" id="iapellidoMat" maxlength="30" size="20" placeholder="Apellido Materno" onkeyup="validaFullName();" required>
                 </div>    
             </div>
             
@@ -58,7 +61,7 @@
                     <label for="lemp">Empresa</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" class="mayusculas" name="iempresa" id="iempresa" maxlength="30" size="40" placeholder="Nombre Empresa">
+                    <input type="text" class="mayusculas" name="iempresa" id="iempresa" maxlength="30" size="40" placeholder="Nombre Empresa" required>
                 </div>    
             </div>
 
@@ -67,7 +70,7 @@
                     <label for="ltel">Telefono</label>
                 </div>
                 <div class="col-75">
-                    <input type="tel" pattern="[0-9]{10}" name="itel" id="itel" maxlength="10" size="15" placeholder="Telefono 10 Digitos">
+                    <input type="tel" pattern="[0-9]{10}" name="itel" id="itel" maxlength="10" size="15" placeholder="Telefono 10 Digitos" required>
                 </div>
             </div>
 
@@ -76,7 +79,7 @@
                     <label for="lemail">Email</label>
                 </div>
                 <div class="col-75">
-                    <input type="email" name="iemail" id="iemail" maxlength="60" size="80" placeholder="Email">
+                    <input type="email" name="iemail" id="iemail" maxlength="60" size="80" placeholder="Email" required>
                 </div>
             </div>
             <div class="row">
