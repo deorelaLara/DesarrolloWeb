@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0;
+            text-align: center;
+        }
+        #header{
+            font: bold;
+            background-color: rgb(255, 127, 138);
+        }
+        h1{
+            text-align: center;
+            padding-top: 10px;
+        }
+        #menu{
+            float: left;
+            width: 20%;
+            height: 700px;
+            background-color: rgb(43, 226, 217);
+        }
+        #menu img{
+            width: 35%;
+            margin: 5%;
+            cursor: pointer;
+        }
+        #principal{
+            float: left;
+            width: 75%;
+        }
+        #visor{
+            width: 60%;
+            margin: 10%;
+        }
+        #visor img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1> Visor de imágenes </h1>
+    </div>
+
+    <div id="menu">
+        <img src = "images/foto1.jpg" alt="1. Cymbals" name="foto1" onclick="miFoto(1);">
+        <img src = "images/foto2.jpg" alt="2. Drumstick 5A" name="foto2" onclick="miFoto(2);">
+        <img src = "images/foto3.jpg" alt="3. Drumstick 7A" name="foto3" onclick="miFoto(3);">
+        <img src = "images/foto4.jpg" alt="4. Cymbals" name="foto4" onclick="miFoto(4);">
+        <img src = "images/foto5.jpg" alt="5. Drumset" name="foto5" onclick="miFoto(5);">
+    </div><!-- end menu -->
+    
+    <div id="principal">
+        <div id="visor">
+            <img src = "images/foto1.jpg" alt="1. Cymbals" name="fotovisor">
+            <div id="titulo">1. Cymbals</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload=function(){ //tras cargar la pagina
+        visor1=document.getElementById("visor"); //da referencia al visor
+        mititulo=document.getElementById("titulo"); //da referencia a propiedad alt
+    }
+
+    function miFoto(num){ //cambiar la imagen 
+        f="images/foto"+num+".jpg"  //la nueva
+        document.images["fotovisor"].src=f
+        t=document.images["fotos" + num].alt;
+        mititulo.innerHTML=t;  //asignar el div correspondiente 
+        alert("hola");
+    }
+</script>
+</html>

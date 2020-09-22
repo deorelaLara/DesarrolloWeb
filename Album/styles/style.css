@@ -1,0 +1,34 @@
+*{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+#header{
+    font: bold;
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+#menu{
+    float: left;
+    width: 25%;
+    background-color: blueviolet;
+}
+#menu img{
+    width: 35%;
+    margin: 5%;
+    cursor: pointer;
+}
+#principal{
+    float: left;
+    width: 75%;
+}
+#visor{
+    width: 60%;
+    margin: 10%;
+}
+#visor img{
+    width: 100%;
+}
