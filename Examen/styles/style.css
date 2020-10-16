@@ -1,0 +1,74 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html{
+    font-family: "Lucida Sans", sans-serif;
+    font-size: large;
+}
+#save{
+    background-color: rgb(160, 156, 156);
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+#btn_save{
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow
+}
+#cancelar{
+    background-color: rgb(160, 156, 156);
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+#btn_cancelar{
+    height: 50px;
+    width: 100px;
+    background-color: red
+}
+#header{
+    background-color: rgb(10, 235, 223);
+    color: #ffffff;
+    padding: 1px;
+    text-align: center;
+}
+input[type=text], input[type=select]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(27, 229, 236);
+    border-radius: 4px;
+    resize: vertical;
+}
+#i_codigo{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid rgb(25, 225, 240);
+    border-radius: 4px;
+    resize: vertical;
+}
+form{
+    width: 400px;
+    padding: 5px;
+    margin:auto;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+@media screen and (min-width: 600px){
+    .col-25,.col-75,input[type=submit]{
+        width: 50%;
+        margin-top: 0;
+    }
+    
+}

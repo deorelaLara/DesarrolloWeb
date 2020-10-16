@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>REGISTRO BIBLIOTECA</title>
+</head>
+<body>
+   
+    <div id="header">
+        <h1>Ingreso de Libros</h1>
+    </div>
+    
+
+   
+    <!-- FORM CON TODOS LOS DATOS-->
+    <form  name="id_form" id="id_form" action="#" method="post" accept-charset="utf-8" onsubmit="return valida_forma();">
+                <!-- DIV PARA INGRESAR CODIGO Y BOTON GUARDAR-->
+        <div id="save">
+            <label>Codigo</label>
+            <label id="status"></label>
+            <input type="numeric" id="i_codigo" name="i_codigo" placeholder="Codigo" maxlength="10" minlength="5" required>
+            <input type="submit" id="btn_save" name="btn_save" value="Guardar">
+        </div>
+        
+        <div class="col-75">
+            <label>Nombre del Libro:</label>
+        </div>
+        <input type="text" id="i_name" name="i_name" placeholder="Nombre del libro"  class="mayusculas" required>
+        
+        <br><br>
+        <div class="col-75">
+            <label>Editorial:</label>
+        </div>
+        <select name="s_editorial" id="s_editorial" required>
+            <!-- Opciones de la lista -->
+            <option value="0">Select Option</option>
+            <option value="1">Santillana</option>
+            <option value="2">GECO</option> 
+            <option value="3">Quintanilla</option>
+        </select>
+        
+        <br><br>
+        <div class="col-25">
+            <label>Autor:</label>
+        </div>
+        <input type="text" id="i_autor" name="i_autor" placeholder="Autor" required>
+       
+        <br><br>
+        <div class="col-25">
+            <label>Fecha Edicion:</label>
+        </div>
+        <input type="text" id="i_edicion" name="i_edicion" placeholder="Fecha Edicion" required>
+
+        <br><br>
+        <div class="col-75">
+            <label>Cantidad:</label>
+        </div>
+        <select name="s_cantidad" id="s_cantidad" required>
+            <!-- Opciones de la lista -->
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option> 
+            <option value="3">3</option>
+        </select>
+
+        <br><br>
+        <div class="col-75">
+            <label>Fecha Salida:</label>
+        </div>
+        <input type="date" id="i_fecha" name="i_fecha" required>   
+        
+                    <!-- DIV PARA BOTON CANCELAR -->
+        <div id="cancelar">
+            <input type="reset" id="btn_cancelar" btn_cancelar" value="Cancelar">
+        </div>      
+    </form>
+    
+    <!-- IMPORTAMOS NUESTRAS FUNCIONES JS-->
+    <script src="js/myfunctions.js" type="text/javascript"></script>
+
+</body>
+</html>

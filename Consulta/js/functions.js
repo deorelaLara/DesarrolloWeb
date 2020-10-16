@@ -1,5 +1,5 @@
 function valida_form(){
-    alert("hola")
+    //alert("hola")
     var var_name = document.getElementById("i_name").value;
     var var_email = document.getElementById("i_email").value;
     //var var_radio1 = document.getElementById("i_prod1").checked;
